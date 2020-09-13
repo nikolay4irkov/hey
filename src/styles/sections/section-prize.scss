@@ -1,0 +1,79 @@
+.section-prize {
+  position: relative;
+  padding: 60px 0 280px;
+
+  @media (min-width: $min-lg) {
+    padding: 210px 0 500px;
+  }
+}
+
+.prizes-wrapper {
+  margin-top: 365px;
+
+  @media (min-width: $min-lg) {
+    margin-top: 208px;
+  }
+}
+
+.prize {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:last-of-type {
+    margin-bottom: unset;
+  }
+
+  @media (min-width: $min-lg) {
+    margin-bottom: unset;
+    width: 22%;
+  }
+}
+
+.prize__img {
+  margin-bottom: 25px;
+}
+
+.prize__text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.prize__subtext {
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #AFAFAF;
+}
+
+.smile-1 {
+  position: absolute;
+  left: 60%;
+  top: 200px;
+  max-width: 337px;
+
+  @media (min-width: $min-lg){
+    left: 90%;
+    max-width: unset;
+    top: 105px;
+  }
+}
+
+.smile-2 {
+  position: absolute;
+  right: 100%;
+  bottom: 100px;
+  max-width: 837px;
+
+  @media (min-width: $min-lg){
+    max-width: unset;
+    right: 100%;
+    bottom: 200px;
+  }
+}
+
+

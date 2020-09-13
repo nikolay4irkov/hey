@@ -1,0 +1,38 @@
+.footer {
+  padding-bottom: 30px;
+
+  @media (min-width: $min-lg){
+    padding-bottom: 60px;
+  }
+}
+
+.empat-logo {
+  margin-bottom: 20px;
+
+  svg {
+    fill: rgba(227, 228, 232, 1);
+    stroke: #E3E4E8;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    transition: stroke-dashoffset 1.5s, fill 0.45s 0.5s;
+    width: 119px;
+    height: 28.4px;
+  }
+
+  &:hover {
+    svg {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+  }
+
+  @media (min-width: $min-lg){
+    margin-bottom: unset;
+  }
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+}

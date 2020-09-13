@@ -1,0 +1,57 @@
+.ttl-1 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 110%;
+  color: $yellow;
+
+  @media (min-width: $min-lg){
+    font-size: 64px;
+  }
+}
+
+.ttl-2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+
+  @media (min-width: $min-lg){
+    font-size: 36px;
+  }
+}
+
+.ttl-3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 30px;
+
+  @media (min-width: $min-lg){
+
+  }
+}
+
+.sttl {
+  font-size: 18px;
+  line-height: 130%;
+
+  @media (min-width: $min-lg){
+    font-size: 24px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,85 @@
+.section-hero {
+  //min-height: calc(100vh - 100px);
+  height: 640px;
+  position: relative;
+
+  @media (min-width: $min-lg) {
+    min-height: calc(100vh - 150px);
+  }
+}
+
+.box-block {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  //border: 1px solid red;
+  width: 355px;
+  height: 300px;
+
+  @media (min-width: $min-lg) {
+    bottom: 20px;
+    width: 600px;
+    height: 400px;
+  }
+}
+
+//.box, .box-up, .confetti {
+//  position: absolute;
+//  left: 50%;
+//  transform: translateX(-50%);
+//}
+
+.box, .box-up, .confetti {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box {
+  bottom: 0;
+  max-width: 145px;
+
+  @media (min-width: $min-lg) {
+    max-width: unset;
+  }
+}
+
+.box-up {
+  bottom: 84px;
+  max-width: 159px;
+  transform: unset;
+
+  @media (min-width: $min-lg) {
+    max-width: unset;
+    bottom: 99px;
+
+  }
+}
+
+.confetti {
+  opacity: 0;
+  bottom: 55px;
+  max-width: 325px;
+  left: calc(50% - 7px);
+
+  @media (min-width: $min-lg) {
+    left: 50%;
+    max-width: unset;
+    bottom: 75px;
+    transform: translateX(-51%);
+  }
+}
+
+.box-text {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  opacity: 0;
+
+  @media (min-width: $min-lg) {
+    bottom: 225px;
+    position: absolute;
+  }
+}

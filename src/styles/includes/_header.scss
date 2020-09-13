@@ -1,0 +1,59 @@
+.header {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  //height: 125px;
+  z-index: 4;
+  transition: background $basic-transition, height $basic-transition;
+  //padding: 0 15px;
+
+
+  @media (min-width: $min-lg) {
+    //top: 48px;
+    top: 28px;
+  }
+
+  //.is-scrolled & {
+  //  background: rgba($white, 0.95);
+  //  height: 90px;
+  //}
+}
+
+.logo {
+
+}
+
+.logo-img {
+  max-width: 109px;
+
+  @media (min-width: $min-lg) {
+    max-width: 220px;
+  }
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  color: $black;
+  margin-right: 27px;
+
+  &:last-of-type {
+    margin-right: unset !important;
+  }
+
+  @media (min-width: $min-lg) {
+    font-size: 18px;
+    margin-right: 60px;
+    transition: color $basic-transition;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

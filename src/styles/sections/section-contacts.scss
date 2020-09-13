@@ -1,0 +1,118 @@
+.section-contacts {
+  padding: 60px 0 70px;
+
+  @media (min-width: $min-lg) {
+    padding: 120px 0 180px;
+  }
+}
+
+.contacts {
+  margin-bottom: 40px;
+
+  @media (min-width: $min-lg) {
+    margin-bottom: unset;
+    margin-right: 100px;
+  }
+}
+
+.contact-link {
+  display: block;
+  position: relative;
+  padding-left: 43px;
+  font-size: 18px;
+  line-height: 130%;
+  color: $black;
+  transition: color $basic-transition;
+  margin-bottom: 40px;
+
+  &:last-of-type {
+    margin-bottom: unset !important;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-size: cover !important;
+    width: 26px;
+    height: 26px;
+  }
+
+  @media (min-width: $min-lg) {
+    max-width: 350px;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+.contact-link--mail {
+  &:before {
+    background: url("../img/mail.svg") no-repeat center;
+  }
+}
+
+.contact-link--phone {
+  &:before {
+    background: url("../img/phone.svg") no-repeat center;
+  }
+}
+
+.contact-link--map {
+  &:before {
+    background: url("../img/pin.svg") no-repeat center;
+    width: 26px;
+    height: 31.2px;
+  }
+}
+
+.social-wrapper {
+  max-width: 164px;
+}
+
+.social-item {
+  @media (min-width: $min-lg){
+
+    &:nth-child(1) {
+      &:hover {
+        circle {
+          transition: all $basic-transition;
+          fill: #3B5998;
+        }
+
+        path {
+          fill: $white;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &:hover {
+        circle {
+          transition: all $basic-transition;
+          fill: #00B2FF;
+        }
+
+        path {
+          fill: $white;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &:hover {
+        circle {
+          transition: all $basic-transition;
+          fill: #E1306C;
+        }
+
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

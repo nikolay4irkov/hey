@@ -1,0 +1,124 @@
+// Основные стили, дополнение стилей reset.css для тегов которые убирают ненужные стили
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px auto $red;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+a,
+div {
+  //letter-spacing: 0.05em;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: 'Cera Round Pro', sans-serif;
+  font-weight: 400;
+  background: $white;
+  padding-top: 100px;
+
+  @media (min-width: $min-sm) {
+    padding-top: 150px;
+  }
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none !important;
+}
+
+main {
+  position: relative;
+  transition: opacity 0.55s, transform 0.55s;
+
+  //&:not(.is-loaded) {
+  //  opacity: 0;
+  //  transform: translateY(20px);
+  //}
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  //Писать свои значения
+   @media (min-width: $min-md) {
+     max-width: 980px;
+     padding: 0;
+   }
+
+   @media (min-width: $min-lg) {
+     max-width: 1080px;
+   }
+
+   @media (min-width: 1500px) {
+     max-width: 1210px;
+   }
+}
+
+.container--header {
+  @media (min-width: 1440px){
+    max-width: 1300px !important;
+  }
+}
+
+.d-md-block {
+  @media (min-width: $min-md) {
+    display: block;
+  }
+}
+
+.d-md-none {
+  @media (min-width: $min-md) {
+    display: none;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+//.js-visible {
+//  @media (min-width: $min-sm) {
+//    transition: all $basic-transition;
+//
+//    &:not(.is-visible) {
+//      transform: translateY(30px);
+//    }
+//  }
+//}
